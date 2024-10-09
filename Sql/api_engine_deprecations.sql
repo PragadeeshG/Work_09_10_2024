@@ -1,0 +1,16 @@
+create table if not exists api_engine_deprecations(
+app_engine_code Integer not null,
+deprecation_console_code Integer null,
+deprecation_console_code_position varchar(255) null,
+deprecation_console_code_length varchar(255) null,
+console_tools varchar(255) null,
+cli_tools varchar(255) null,
+api_gateway_enabled char null,
+total_lambdas varchar(255) null,
+base_image varchar(255) null,
+memory varchar(255) null,
+cpus varchar(255) null,
+gpus varchar(255) null,
+avilability_zones varchar(255) null,
+multi_region_support varchar(255) null,
+constraint api_engine_deprecations_pk primary key(app_engine_code));

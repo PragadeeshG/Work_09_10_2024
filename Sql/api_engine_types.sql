@@ -1,0 +1,15 @@
+create table if not exists api_engine_types(
+app_engine_code Integer not null,
+standard_types varchar(255) null,
+standard_type_flag char null,
+instance_class_code Integer null,
+class_name varchar(255) null,
+memory_limit varchar(255) null,
+cpu_limit Integer null,
+automatic_scaling_max Integer null,
+scaling_type varchar(255) null,
+basic_scaling_max Integer null,
+manual_scaling_max Integer null,
+status varchar(255) null,
+quaotas_and_limits varchar(255) null,
+constraint api_engine_types_pk primary key(app_engine_code));
